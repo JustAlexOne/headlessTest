@@ -11,9 +11,11 @@ import static com.codeborne.selenide.Selenide.$;
 public class TheTest {
 
     static {
-        int port = 4567; // todo
+        int port = 80; // todo
         Configuration.baseUrl = "http://127.0.0.1:" + port;
         Configuration.browser = WebDriverRunner.CHROME;
+
+        System.setProperty("chromeoptions.args", "--headless,--disable-gpu"); // in order for chrome to work via vnc
     }
 
     @Test
