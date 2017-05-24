@@ -4,3 +4,4 @@
 # ignore IDEA files
 *.iml
 /.idea/
+src/main/
